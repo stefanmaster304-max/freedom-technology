@@ -75,7 +75,7 @@ window.Partials = (() => {
       <div class="footer-grid">
         <div class="footer-col">
           <h4>Freedom Technology</h4>
-          <p>Technological freedom, full accessibility, and tools for the blind community.</p>
+          <p>Technological freedom, full accessibility, and tools built for everyone.</p>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
@@ -87,7 +87,7 @@ window.Partials = (() => {
           <h4>Contact</h4>
           <ul class="footer-links">
             <li><a href="https://t.me/stfgames" target="_blank" rel="noopener">📢 Telegram: @stfgames</a></li>
-            <li><a href="https://t.me/estefamaster23" target="_blank" rel="noopener">✈️ Telegram: @estefamaster23</a></li>
+            <li><a href="https://t.me/Stefanmaster23" target="_blank" rel="noopener">✈️ Telegram: @Stefanmaster23</a></li>
           </ul>
         </div>
       </div>

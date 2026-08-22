@@ -1,6 +1,6 @@
 # Freedom Technology — Technological Freedom & Accessibility
 
-A fully accessible web portal dedicated to technological freedom, assistive tools, and audio games for the blind community.
+A fully accessible web portal dedicated to technological freedom, assistive tools, and audio games — built by and for people who are blind or have low vision.
 
 Led by **Stefan** (21, Brazil).
 
@@ -65,7 +65,7 @@ Then: **Settings → Pages → Source: main / root**
 ## Contact
 
 - **Telegram Channel:** [@stfgames](https://t.me/stfgames)
-- **Personal Telegram:** [@estefamaster23](https://t.me/estefamaster23)
+- **Personal Telegram:** [@Stefanmaster23](https://t.me/Stefanmaster23)
 - **Partners:** [Sightless Coders](http://sightless-coders.duckdns.org:1030)
 
 **Copyright:** © 2026 Freedom Technology. All rights reserved.
