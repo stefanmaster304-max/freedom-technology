@@ -1,32 +1,30 @@
 /**
  * Freedom Technology — Main Script
- * Loads partials, binds high-contrast toggle only.
+ * Loads partials. Auto-applies high contrast based on OS preference.
  */
 document.addEventListener('DOMContentLoaded', async () => {
   await Partials.load();
 
-  // Screen reader announcer
-  const announcer = document.getElementById('live-announcer');
-  function announce(msg) {
-    if (!announcer) return;
-    announcer.textContent = '';
-    requestAnimationFrame(() => { announcer.textContent = msg; });
+  // Auto-detect OS high contrast preference
+  const prefersContrast = window.matchMedia('(prefers-contrast: more)');
+  function applyContrast(on) {
+    document.body.classList.toggle('high-contrast', on);
+    localStorage.setItem('ft_contrast', on);
   }
 
-  // Restore saved high-contrast preference
-  const savedContrast = localStorage.getItem('ft_contrast') === 'true';
-  if (savedContrast) document.body.classList.add('high-contrast');
-
-  // High contrast toggle
-  const contrastBtn = document.getElementById('btn-toggle-contrast');
-  if (contrastBtn) {
-    contrastBtn.setAttribute('aria-pressed', savedContrast);
-    contrastBtn.addEventListener('click', () => {
-      const on = !document.body.classList.contains('high-contrast');
-      document.body.classList.toggle('high-contrast', on);
-      localStorage.setItem('ft_contrast', on);
-      contrastBtn.setAttribute('aria-pressed', on);
-      announce(on ? 'High contrast enabled.' : 'High contrast disabled.');
-    });
+  // Check saved preference first, otherwise follow OS
+  const saved = localStorage.getItem('ft_contrast');
+  if (saved !== null) {
+    applyContrast(saved === 'true');
+  } else {
+    applyContrast(prefersContrast.matches);
   }
+
+  // Listen for OS changes
+  prefersContrast.addEventListener('change', (e) => {
+    // Only auto-follow if user hasn't manually set a preference
+    if (localStorage.getItem('ft_contrast') === null) {
+      document.body.classList.toggle('high-contrast', e.matches);
+    }
+  });
 });

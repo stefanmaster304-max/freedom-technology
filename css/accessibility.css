@@ -92,8 +92,7 @@ body.high-contrast .btn-outline {
 
 /* 6. Touch target minimum (WCAG 2.5.8) */
 .btn,
-.nav-link,
-.a11y-btn {
+.nav-link {
   min-height: 44px;
   min-width: 44px;
 }

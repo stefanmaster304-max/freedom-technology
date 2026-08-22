@@ -35,9 +35,7 @@ window.Partials = (() => {
           ${navItems()}
         </ul>
       </nav>
-      <button id="btn-toggle-contrast" class="a11y-btn" aria-pressed="false" title="Toggle high contrast mode">
-        <span aria-hidden="true">◐</span> Contrast
-      </button>
+
     </div>
   </header>`;
   }
