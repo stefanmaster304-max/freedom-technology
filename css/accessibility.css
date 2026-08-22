@@ -3,8 +3,7 @@
    WCAG 2.2 AA / AAA compliance
    ========================================================================== */
 
-/* 1. Screen-reader only ────────────────────────────────────────────────────── */
-
+/* 1. Screen-reader only */
 .sr-only {
   position: absolute !important;
   width: 1px !important;
@@ -17,8 +16,7 @@
   border: 0 !important;
 }
 
-/* 2. Skip link ─────────────────────────────────────────────────────────────── */
-
+/* 2. Skip link */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -41,15 +39,13 @@
   outline-offset: 3px;
 }
 
-/* 3. Focus-visible ─────────────────────────────────────────────────────────── */
-
+/* 3. Focus-visible */
 :focus-visible {
   outline: 3px solid var(--focus-ring) !important;
   outline-offset: 2px !important;
 }
 
-/* 4. Reduced motion ────────────────────────────────────────────────────────── */
-
+/* 4. Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -59,8 +55,7 @@
   }
 }
 
-/* 5. High contrast mode ────────────────────────────────────────────────────── */
-
+/* 5. High contrast mode */
 body.high-contrast {
   --color-bg:            #000000;
   --color-surface:       #0a0a0a;
@@ -95,16 +90,10 @@ body.high-contrast .btn-outline {
   border-color: #ffffff !important;
 }
 
-/* 6. Font size scaling ─────────────────────────────────────────────────────── */
-
-body.font-large  { font-size: 115% !important; }
-body.font-xlarge { font-size: 135% !important; }
-
-/* 7. Touch target minimum (WCAG 2.5.8) ────────────────────────────────────── */
-
-.a11y-btn,
+/* 6. Touch target minimum (WCAG 2.5.8) */
 .btn,
-.nav-link {
+.nav-link,
+.a11y-btn {
   min-height: 44px;
   min-width: 44px;
 }

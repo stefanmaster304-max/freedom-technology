@@ -1,4 +1,4 @@
-# Freedom Technology — Technological Freedom & Accessibility
+# Freedom Technology
 
 A fully accessible web portal dedicated to technological freedom, assistive tools, and audio games — built by and for people who are blind or have low vision.
 
@@ -8,14 +8,12 @@ Led by **Stefan** (21, Brazil).
 
 ## Features
 
-- **100% English** — Clean, accessible content for a global audience
-- **WCAG 2.2 AA/AAA** — Semantic HTML5, proper ARIA, focus management
+- **WCAG 2.2 AA/AAA** — Semantic HTML5, ARIA, focus management
 - **Screen reader support** — NVDA, JAWS, VoiceOver, TalkBack, Orca
 - **Keyboard navigation** — Skip links, visible focus rings, logical tab order
-- **Visual modes** — Dark (default), Light, High Contrast
-- **Font scaling** — Three sizes: default, large, extra-large
+- **High contrast mode** — Single toggle, persisted across sessions
 - **Reduced motion** — Respects `prefers-reduced-motion`
-- **No dependencies** — Pure HTML/CSS/JS, zero build tools, zero CDN
+- **No dependencies** — Pure HTML/CSS/JS, zero build tools
 - **Responsive** — Works from 320px to 4K
 
 ---
@@ -24,48 +22,45 @@ Led by **Stefan** (21, Brazil).
 
 | Page | Description |
 |------|-------------|
-| `index.html` | Homepage — hero illustration, welcome, three pillars |
-| `projetos.html` | Projects — community announcement, game in development |
-| `sobre.html` | About — Stefan's story, manifesto, contact |
-| `parceiros.html` | Partners — Sightless Coders, community channels |
+| `index.html` | Home — welcome, hero illustration, what we do |
+| `projetos.html` | Projects — game development with NVGT |
+| `sobre.html` | About — Stefan's story, mission, contact |
+| `parceiros.html` | Partners — Sightless Coders, community |
 
 ---
 
 ## Structure
 
 ```
-├── index.html                Homepage
-├── projetos.html             Projects
-├── sobre.html                About
-├── parceiros.html            Partners
+├── index.html              Home
+├── projetos.html           Projects
+├── sobre.html              About
+├── parceiros.html          Partners
 ├── css/
-│   ├── style.css             Design system (dark/light/high-contrast)
-│   └── accessibility.css     WCAG compliance styles
+│   ├── style.css           Design system
+│   └── accessibility.css   WCAG compliance
 ├── js/
-│   ├── partials.js           Shared header/footer injection
-│   └── main.js               Interactivity & a11y controls
+│   ├── partials.js         Shared header/footer
+│   └── main.js             High contrast toggle
 └── assets/images/
-    └── hero-illustration.svg Inclusive SVG hero illustration
+    └── hero-illustration.svg
 ```
 
 ---
 
 ## Deploy to GitHub Pages
 
-```bash
-git init && git add . && git commit -m "Initial commit"
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-Then: **Settings → Pages → Source: main / root**
+1. Push to your GitHub repository
+2. Go to **Settings → Pages**
+3. Set Source to **main** branch, **/(root)** folder
+4. Save — site goes live in ~1 minute
 
 ---
 
 ## Contact
 
-- **Telegram Channel:** [@stfgames](https://t.me/stfgames)
-- **Personal Telegram:** [@Stefanmaster23](https://t.me/Stefanmaster23)
+- **Telegram:** [@stfgames](https://t.me/stfgames)
+- **Personal:** [@Stefanmaster23](https://t.me/Stefanmaster23)
 - **Partners:** [Sightless Coders](http://sightless-coders.duckdns.org:1030)
 
-**Copyright:** © 2026 Freedom Technology. All rights reserved.
+© 2026 Freedom Technology. All rights reserved.

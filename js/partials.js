@@ -1,6 +1,6 @@
 /**
  * Freedom Technology — Partials Loader
- * Injects shared a11y bar, header, and footer. No i18n — English only.
+ * Injects shared header and footer. Minimal a11y bar with single contrast toggle.
  */
 window.Partials = (() => {
   const PAGES = [
@@ -22,35 +22,6 @@ window.Partials = (() => {
     }).join('\n          ');
   }
 
-  function a11yBar() {
-    return `
-  <aside class="a11y-bar" aria-label="Accessibility tools">
-    <div class="container a11y-bar-inner">
-      <span class="a11y-bar-label">Accessibility</span>
-      <div class="a11y-controls">
-        <div class="a11y-select-wrapper">
-          <label for="lang-selector" class="sr-only">Language</label>
-          <button id="btn-toggle-contrast" class="a11y-btn" aria-pressed="false" title="Toggle high contrast">
-            <span aria-hidden="true">◐</span> Contrast
-          </button>
-          <button id="btn-toggle-theme" class="a11y-btn" aria-pressed="false" title="Toggle light/dark theme">
-            <span aria-hidden="true">◑</span> Theme
-          </button>
-          <button id="btn-font-decrease" class="a11y-btn" title="Decrease text size">
-            <span aria-hidden="true">A−</span>
-          </button>
-          <button id="btn-font-reset" class="a11y-btn" title="Reset text size">
-            <span aria-hidden="true">A</span>
-          </button>
-          <button id="btn-font-increase" class="a11y-btn" title="Increase text size">
-            <span aria-hidden="true">A+</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </aside>`;
-  }
-
   function header() {
     return `
   <header class="site-header" role="banner">
@@ -64,6 +35,9 @@ window.Partials = (() => {
           ${navItems()}
         </ul>
       </nav>
+      <button id="btn-toggle-contrast" class="a11y-btn" aria-pressed="false" title="Toggle high contrast mode">
+        <span aria-hidden="true">◐</span> Contrast
+      </button>
     </div>
   </header>`;
   }
@@ -107,7 +81,6 @@ window.Partials = (() => {
 
     const wrapper = document.createElement('div');
     wrapper.innerHTML =
-      a11yBar() +
       header() +
       `<main id="main-content" class="page-content" role="main" tabindex="-1">
         <div class="container">${content}</div>
