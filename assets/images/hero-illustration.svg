@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Freedom Technology — Inclusive Digital Workspace</title>
+  <desc id="hero-desc">An inclusive illustration showing diverse people gathered around a large glowing monitor. The screen displays audio waves, braille dots, and technology symbols. A game controller sits nearby. The scene uses blue and amber tones, conveying technological freedom and digital inclusion.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e14"/>
+      <stop offset="100%" stop-color="#141b24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1a2e"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <linearGradient id="p1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="p2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="p3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="p4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="420" fill="url(#bg)" rx="12"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="480" cy="210" rx="320" ry="200" fill="url(#glow)"/>
+
+  <!-- Desk -->
+  <rect x="180" y="305" width="600" height="6" rx="3" fill="#1e2a3a" opacity="0.9"/>
+  <rect x="200" y="311" width="560" height="3" rx="1.5" fill="#141b24" opacity="0.6"/>
+
+  <!-- Monitor stand -->
+  <rect x="465" y="262" width="30" height="46" rx="4" fill="#1e2a3a"/>
+  <ellipse cx="480" cy="308" rx="45" ry="5" fill="#1e2a3a" opacity="0.7"/>
+
+  <!-- Monitor body -->
+  <rect x="270" y="78" width="420" height="190" rx="14" fill="#141b24" stroke="#2a3545" stroke-width="1.5"/>
+  <!-- Screen -->
+  <rect x="280" y="88" width="400" height="170" rx="8" fill="url(#scr)"/>
+
+  <!-- Screen: Title -->
+  <text x="315" y="118" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#e8edf4" letter-spacing="0.5">FREEDOM TECHNOLOGY</text>
+
+  <!-- Screen: Audio waveform -->
+  <g opacity="0.9">
+    <rect x="310" y="135" width="5" height="20" rx="2.5" fill="#38bdf8"/>
+    <rect x="322" y="128" width="5" height="34" rx="2.5" fill="#10b981"/>
+    <rect x="334" y="122" width="5" height="46" rx="2.5" fill="#38bdf8"/>
+    <rect x="346" y="132" width="5" height="26" rx="2.5" fill="#10b981"/>
+    <rect x="358" y="140" width="5" height="10" rx="2.5" fill="#f59e0b"/>
+    <rect x="370" y="126" width="5" height="38" rx="2.5" fill="#38bdf8"/>
+    <rect x="382" y="134" width="5" height="22" rx="2.5" fill="#10b981"/>
+    <rect x="394" y="118" width="5" height="54" rx="2.5" fill="#38bdf8"/>
+    <rect x="406" y="136" width="5" height="18" rx="2.5" fill="#f59e0b"/>
+    <rect x="418" y="130" width="5" height="30" rx="2.5" fill="#38bdf8"/>
+    <rect x="430" y="138" width="5" height="14" rx="2.5" fill="#10b981"/>
+    <rect x="442" y="124" width="5" height="42" rx="2.5" fill="#38bdf8"/>
+    <rect x="454" y="132" width="5" height="26" rx="2.5" fill="#a78bfa"/>
+    <rect x="466" y="140" width="5" height="10" rx="2.5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Screen: Braille dots -->
+  <g opacity="0.65">
+    <circle cx="500" cy="138" r="3.5" fill="#f59e0b"/>
+    <circle cx="512" cy="138" r="3.5" fill="#f59e0b"/>
+    <circle cx="500" cy="150" r="3.5" fill="#f59e0b"/>
+    <circle cx="524" cy="144" r="3.5" fill="#f59e0b"/>
+    <circle cx="536" cy="138" r="3.5" fill="#f59e0b"/>
+    <circle cx="548" cy="150" r="3.5" fill="#f59e0b"/>
+    <circle cx="536" cy="150" r="3.5" fill="#f59e0b"/>
+    <circle cx="560" cy="144" r="3.5" fill="#f59e0b"/>
+    <circle cx="572" cy="138" r="3.5" fill="#f59e0b"/>
+    <circle cx="584" cy="150" r="3.5" fill="#f59e0b"/>
+    <circle cx="572" cy="150" r="3.5" fill="#f59e0b"/>
+  </g>
+
+  <!-- Screen: Text line -->
+  <text x="500" y="178" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">INCLUSION · ACCESSIBILITY · FREEDOM</text>
+
+  <!-- Screen: Accessibility icon -->
+  <g transform="translate(310, 190)" opacity="0.6">
+    <circle cx="14" cy="5" r="6" fill="none" stroke="#10b981" stroke-width="1.5"/>
+    <path d="M14 12 L14 26 M8 18 L20 18 M10 32 L14 26 L18 32" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Screen: Game controller -->
+  <g transform="translate(380, 194)" opacity="0.6">
+    <rect x="0" y="4" width="30" height="18" rx="9" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="8" cy="13" r="2.5" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="22" cy="11" r="1.5" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="25" cy="15" r="1.5" fill="#f59e0b" opacity="0.7"/>
+  </g>
+
+  <!-- Screen: Code -->
+  <text x="440" y="218" font-family="monospace" font-size="12" fill="#38bdf8" opacity="0.5">&lt;/&gt;</text>
+
+  <!-- Screen: Globe icon -->
+  <g transform="translate(480, 200)" opacity="0.5">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+    <ellipse cx="12" cy="12" rx="4" ry="10" fill="none" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke="#a78bfa" stroke-width="0.8"/>
+  </g>
+
+  <!-- ─── Person 1 (left, seated, blonde) ─────────────────────────────────── -->
+  <g transform="translate(190, 150)">
+    <circle cx="45" cy="0" r="24" fill="url(#p1)" opacity="0.9"/>
+    <!-- Blonde hair -->
+    <path d="M23,-12 Q32,-30 50,-27 Q67,-24 70,-12 Q66,-24 48,-28 Q34,-28 23,-12Z" fill="#fbbf24" opacity="0.75"/>
+    <rect x="27" y="24" width="36" height="55" rx="8" fill="url(#p1)" opacity="0.8"/>
+    <!-- Arm reaching toward desk -->
+    <path d="M63,42 Q80,52 85,62" fill="none" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- ─── Person 2 (right, standing, amber) ───────────────────────────────── -->
+  <g transform="translate(640, 120)">
+    <circle cx="42" cy="0" r="24" fill="url(#p2)" opacity="0.9"/>
+    <rect x="25" y="24" width="34" height="72" rx="8" fill="url(#p2)" opacity="0.8"/>
+    <!-- Arm with game controller -->
+    <path d="M25,52 Q8,58 14,70" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+    <g transform="translate(4, 62)">
+      <rect x="0" y="0" width="22" height="12" rx="6" fill="#f59e0b" opacity="0.85"/>
+      <circle cx="6" cy="6" r="2" fill="#0a0e14" opacity="0.6"/>
+      <circle cx="16" cy="5" r="1.5" fill="#0a0e14" opacity="0.6"/>
+      <circle cx="18" cy="8" r="1.5" fill="#0a0e14" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- ─── Person 3 (center-right, smaller, green) ─────────────────────────── -->
+  <g transform="translate(575, 195)">
+    <circle cx="30" cy="0" r="18" fill="url(#p3)" opacity="0.85"/>
+    <rect x="16" y="18" width="28" height="52" rx="7" fill="url(#p3)" opacity="0.75"/>
+  </g>
+
+  <!-- ─── Person 4 (far left, standing, purple) ───────────────────────────── -->
+  <g transform="translate(80, 170)">
+    <circle cx="30" cy="0" r="20" fill="url(#p4)" opacity="0.8"/>
+    <rect x="15" y="20" width="30" height="62" rx="7" fill="url(#p4)" opacity="0.7"/>
+    <!-- Arm holding a book/tablet -->
+    <path d="M45,45 Q58,50 60,58" fill="none" stroke="#a78bfa" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <rect x="55" y="52" width="16" height="22" rx="3" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Floating: Braille cell (top-left) -->
+  <g transform="translate(55, 40)" opacity="0.35">
+    <circle cx="0" cy="0" r="3" fill="#f59e0b"/>
+    <circle cx="12" cy="0" r="3" fill="#f59e0b"/>
+    <circle cx="0" cy="12" r="3" fill="#f59e0b"/>
+    <circle cx="12" cy="12" r="3" fill="#f59e0b"/>
+    <circle cx="0" cy="24" r="3" fill="#f59e0b"/>
+    <circle cx="12" cy="24" r="3" fill="#f59e0b"/>
+  </g>
+
+  <!-- Floating: Audio waves (top-right) -->
+  <g transform="translate(800, 30)" opacity="0.3">
+    <path d="M0,20 Q10,5 20,20 Q30,35 40,20" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8,32 Q18,17 28,32 Q38,47 48,32" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M3,44 Q13,29 23,44 Q33,59 43,44" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating: WiFi symbol (bottom-left) -->
+  <g transform="translate(30, 340)" opacity="0.25">
+    <path d="M18,18 A24,24 0 0,1 42,18" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M12,12 A32,32 0 0,1 48,12" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M6,6 A40,40 0 0,1 54,6" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="30" cy="22" r="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- Floating: Binary particles (bottom-right) -->
+  <g opacity="0.2" font-family="monospace" font-size="11" fill="#10b981">
+    <text x="810" y="340">01</text>
+    <text x="840" y="360">10</text>
+    <text x="860" y="330">011</text>
+    <text x="790" y="370">101</text>
+  </g>
+
+  <!-- Subtle stars -->
+  <circle cx="140" cy="25" r="1.5" fill="#e8edf4" opacity="0.2"/>
+  <circle cx="870" cy="50" r="1" fill="#e8edf4" opacity="0.15"/>
+  <circle cx="40" cy="160" r="1" fill="#e8edf4" opacity="0.15"/>
+  <circle cx="920" cy="220" r="1.5" fill="#e8edf4" opacity="0.12"/>
+  <circle cx="100" cy="390" r="1" fill="#e8edf4" opacity="0.1"/>
+  <circle cx="880" cy="400" r="1" fill="#e8edf4" opacity="0.1"/>
+</svg>

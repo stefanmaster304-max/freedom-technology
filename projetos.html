@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our Projects — Freedom Technology. Updates on accessible game development and downloads via GitHub Releases.">
+  <meta name="author" content="Stefan (Freedom Technology)">
+  <title>Our Projects — Freedom Technology</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="live-announcer" aria-live="polite" aria-atomic="true"></div>
+
+  <div id="partials-anchor">
+
+    <header>
+      <h1>Our Projects &amp; Developments</h1>
+      <p>Follow the status of our releases and ongoing work here.</p>
+    </header>
+
+    <!-- Community Announcement -->
+    <section class="callout" aria-labelledby="notice-heading">
+      <h2 id="notice-heading" class="callout-title">📢 Announcement to the Blind Gaming Community</h2>
+      <p>We want to share a sincere message with the entire community of blind gamers worldwide:</p>
+      <p>We are currently working hard to develop an accessible game for you. Not everything has gone as planned behind the scenes, but a positive result is on its way!</p>
+      <p>Please be patient and check back regularly for news and updates. Your support means everything to us.</p>
+    </section>
+
+    <!-- Game in Development -->
+    <section aria-labelledby="game-heading">
+      <div class="card" style="margin-top: 1.5rem;">
+        <div class="card-icon" aria-hidden="true">🎮</div>
+        <h2 id="game-heading">Game in Development</h2>
+        <p>Our game is being built with a complete focus on accessibility and an immersive experience for blind players. Every mechanic is designed to be fully navigable by screen reader and keyboard.</p>
+
+        <!-- Download Area -->
+        <div class="callout callout-primary" style="margin-top: 1.5rem;">
+          <h3 class="callout-title">Direct Download Area</h3>
+          <p>As soon as the game is ready, the direct download (~1 GB) will be available here for free via GitHub Releases.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+            <a href="#"
+               class="btn btn-primary"
+               aria-label="Download Full Game — approximately 1 GB compressed archive (Coming Soon)"
+               onclick="alert('The game is currently under development. Please stay tuned for updates!'); return false;">
+              📥 Download Full Game (~1 GB .ZIP — Coming Soon)
+            </a>
+            <span style="font-size: 0.85rem; color: var(--color-text-muted);">
+              Hosted with unlimited bandwidth via GitHub Releases
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

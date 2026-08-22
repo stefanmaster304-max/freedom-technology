@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Freedom Technology — Accessibility
+   WCAG 2.2 AA / AAA compliance
+   ========================================================================== */
+
+/* 1. Screen-reader only ────────────────────────────────────────────────────── */
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* 2. Skip link ─────────────────────────────────────────────────────────────── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  background: var(--color-primary);
+  color: #000;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: top 0.15s var(--ease);
+  box-shadow: var(--shadow-md);
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* 3. Focus-visible ─────────────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* 4. Reduced motion ────────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 5. High contrast mode ────────────────────────────────────────────────────── */
+
+body.high-contrast {
+  --color-bg:            #000000;
+  --color-surface:       #0a0a0a;
+  --color-surface-alt:   #111111;
+  --color-surface-hover: #1a1a1a;
+  --color-border:        #ffffff;
+  --color-border-subtle: #666666;
+  --color-text:          #ffffff;
+  --color-text-secondary:#ffff00;
+  --color-text-muted:    #ffff00;
+  --color-primary:       #ffff00;
+  --color-primary-hover: #ffffff;
+  --color-primary-dim:   rgba(255, 255, 0, 0.1);
+  --color-accent:        #00ffff;
+  --color-accent-dim:    rgba(0, 255, 255, 0.1);
+  --color-success:       #00ff00;
+  --color-success-dim:   rgba(0, 255, 0, 0.1);
+  --focus-ring:          #00ffff;
+}
+
+body.high-contrast a { color: #ffff00 !important; text-decoration: underline !important; }
+body.high-contrast a:hover { background: #ffff00 !important; color: #000 !important; }
+
+body.high-contrast .btn-primary {
+  background: #ffff00 !important;
+  color: #000 !important;
+  border: 2px solid #ffffff !important;
+}
+
+body.high-contrast .btn-outline {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+/* 6. Font size scaling ─────────────────────────────────────────────────────── */
+
+body.font-large  { font-size: 115% !important; }
+body.font-xlarge { font-size: 135% !important; }
+
+/* 7. Touch target minimum (WCAG 2.5.8) ────────────────────────────────────── */
+
+.a11y-btn,
+.btn,
+.nav-link {
+  min-height: 44px;
+  min-width: 44px;
+}
