@@ -1,6 +1,6 @@
 /**
  * Freedom Technology — Partials Loader
- * Injects shared header and footer. Minimal a11y bar with single contrast toggle.
+ * Injects shared header and footer. Contact info lives only on the About page.
  */
 window.Partials = (() => {
   const PAGES = [
@@ -35,7 +35,6 @@ window.Partials = (() => {
           ${navItems()}
         </ul>
       </nav>
-
     </div>
   </header>`;
   }
@@ -44,19 +43,6 @@ window.Partials = (() => {
     return `
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Freedom Technology</h4>
-          <p>Technological freedom, full accessibility, and tools built for everyone.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="footer-links">
-            <li><a href="https://t.me/stfgames" target="_blank" rel="noopener">📢 Telegram: @stfgames</a></li>
-            <li><a href="https://t.me/Stefanmaster23" target="_blank" rel="noopener">✈️ Telegram: @Stefanmaster23</a></li>
-          </ul>
-        </div>
-      </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Freedom Technology. All rights reserved.</p>
       </div>
