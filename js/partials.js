@@ -50,12 +50,6 @@ window.Partials = (() => {
           <p>Technological freedom, full accessibility, and tools built for everyone.</p>
         </div>
         <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul class="footer-links">
-            ${PAGES.map(p => `<li><a href="${p.href}">${p.label}</a></li>`).join('\n            ')}
-          </ul>
-        </div>
-        <div class="footer-col">
           <h4>Contact</h4>
           <ul class="footer-links">
             <li><a href="https://t.me/stfgames" target="_blank" rel="noopener">📢 Telegram: @stfgames</a></li>
